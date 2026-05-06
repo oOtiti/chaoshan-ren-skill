@@ -17,14 +17,14 @@
   },
   "type": "module",
   "bin": {
-    "teochew-people-skill": "scripts/install-skill.mjs",
-    "chaoshan-ren-skill": "scripts/install-skill.mjs"
+    "teochew-people-skill": "scripts/install-skill.mjs"
   },
   "files": [
-    "skills/chaoshan-ren",
+    "skills/teochew-people-skill",
     "scripts/install-skill.mjs",
     "examples",
     "assets/social-preview.png",
+    "assets/case-demo.svg",
     "README.md",
     "CONTRIBUTING.md",
     "LICENSE"

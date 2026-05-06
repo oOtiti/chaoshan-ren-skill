@@ -1,6 +1,6 @@
 # Before / After
 
-这些例子展示 `chaoshan-ren` skill 适合修正什么问题。项目对外英文名使用 `Teochew People (潮汕人)`，但技术名仍是 `chaoshan-ren`。
+这些例子展示 `teochew-people-skill` skill 适合修正什么问题。项目对外英文名使用 `Teochew People (潮汕人)`，但技术名仍是 `teochew-people-skill`。
 
 ## 例子零：英文项目介绍太泛
 

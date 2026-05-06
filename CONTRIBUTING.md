@@ -63,18 +63,18 @@
 
 ## 文件放哪里
 
-- 改 skill 触发、使用边界、资料导航：编辑 `skills/chaoshan-ren/SKILL.md`。
-- 增加文化资料：优先编辑 `skills/chaoshan-ren/references/01-06` 对应主题文件。
-- 增加文案模板、审校清单、案例：编辑 `skills/chaoshan-ren/references/07-写作模板与审校清单.md` 或 `examples/before-after.md`。
-- 增加常用词和慎用词：编辑 `skills/chaoshan-ren/references/08-常用词库.md`。
-- 增加新任务场景：编辑 `skills/chaoshan-ren/references/09-任务示例.md`。
-- 增加来源链接：编辑 `skills/chaoshan-ren/references/90-资料来源.md`。
+- 改 skill 触发、使用边界、资料导航：编辑 `skills/teochew-people-skill/SKILL.md`。
+- 增加文化资料：优先编辑 `skills/teochew-people-skill/references/01-06` 对应主题文件。
+- 增加文案模板、审校清单、案例：编辑 `skills/teochew-people-skill/references/07-写作模板与审校清单.md` 或 `examples/before-after.md`。
+- 增加常用词和慎用词：编辑 `skills/teochew-people-skill/references/08-常用词库.md`。
+- 增加新任务场景：编辑 `skills/teochew-people-skill/references/09-任务示例.md`。
+- 增加来源链接：编辑 `skills/teochew-people-skill/references/90-资料来源.md`。
 
 ## 写作规范
 
 - 先说明范围，再说明习俗。
 - 对外英文标题优先使用 `Teochew People (潮汕人)`。
-- 技术名保持 `chaoshan-ren`，不要随意改 npm 包名、skill 名和安装目录。
+- 技术名保持 `teochew-people-skill`，不要随意改 npm 包名、skill 名和安装目录。
 - 用“部分地区”“不少家庭”“常见于”“在某些语境中”表达差异。
 - 不要用“必须”“一定”“全体潮汕人都”描述礼俗。
 - 涉及礼俗流程时，写文化含义，不写统一操作手册。

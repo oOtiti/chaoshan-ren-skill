@@ -1,4 +1,4 @@
 interface:
   display_name: "Teochew People (潮汕人)"
   short_description: "用于潮汕人与粤东潮汕文化写作审校"
-  default_prompt: "使用 $chaoshan-ren 写一段准确、有地方感、不过度概括的潮汕文化说明。"
+  default_prompt: "使用 $teochew-people-skill 写一段准确、有地方感、不过度概括的潮汕文化说明。"

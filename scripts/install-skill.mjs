@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "..");
-const source = path.join(root, "skills", "chaoshan-ren");
+const source = path.join(root, "skills", "teochew-people-skill");
 
 const args = process.argv.slice(2);
 
@@ -23,7 +23,7 @@ function valueAfter(flag) {
 }
 
 function usage() {
-  console.log(`潮汕人 skill 安装器
+  console.log(`Teochew People (潮汕人) Skill 安装器
 
 用法:
   npx teochew-people-skill --codex
@@ -57,7 +57,7 @@ const parentDir = customDest
     ? path.join(os.homedir(), ".claude", "skills")
     : path.join(process.env.CODEX_HOME || path.join(os.homedir(), ".codex"), "skills");
 
-const target = path.join(parentDir, "chaoshan-ren");
+const target = path.join(parentDir, "teochew-people-skill");
 
 if (has("--dry-run")) {
   console.log(`将复制: ${source}`);
@@ -77,5 +77,5 @@ if (fs.existsSync(target)) {
 fs.mkdirSync(parentDir, { recursive: true });
 fs.cpSync(source, target, { recursive: true });
 
-console.log(`已安装 chaoshan-ren skill 到: ${target}`);
-console.log("Codex 中可用 $chaoshan-ren 调用；Claude Code 中可用 /chaoshan-ren 调用。");
+console.log(`已安装 Teochew People (潮汕人) Skill 到: ${target}`);
+console.log("Codex 中可用 $teochew-people-skill 调用；Claude Code 中可用 /teochew-people-skill 调用。");

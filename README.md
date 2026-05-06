@@ -1,10 +1,10 @@
 # Teochew People (潮汕人) Skill
 
-![潮汕人 Skill 项目预览图](assets/social-preview.png)
+![Teochew People (潮汕人) Skill 项目预览图](assets/social-preview.png)
 
 让 AI 写潮汕文化时，少一点泛泛而谈，多一点地方感和分寸感。
 
-`chaoshan-ren` 是一个面向 Codex、Claude Code 等 AI agent 的中文 skill。项目对外英文名使用 **Teochew People (潮汕人)**：`Teochew people` 是海外和英文语境里更常见、更有辨识度的潮人/潮汕人说法；`chaoshan-ren` 则保留为 npm 包、skill 目录和命令名，方便安装和工具识别。
+`teochew-people-skill` 是一个面向 Codex、Claude Code 等 AI agent 的中文 skill。项目对外英文名使用 **Teochew People (潮汕人)**：`Teochew people` 是海外和英文语境里更常见、更有辨识度的潮人/潮汕人说法；`teochew-people-skill` 则作为 npm 包名、skill 目录名和调用名，保持安装与使用一致。
 
 这个 skill 用于围绕粤东潮汕文化圈进行写作、审校、解释、研究和本地化。它帮助模型在写 Teochew people / 潮汕人、潮汕风俗、工夫茶、潮剧、英歌、粿品、潮汕菜、侨批、祠堂、善堂、营老爷、出花园等内容时，避免把潮州单点误写成全部潮汕，也避免把地方文化写成刻板印象或猎奇段子。
 
@@ -16,11 +16,13 @@
 - **潮汕人**：面向中文读者时使用，强调粤东潮汕文化圈和海内外潮人社群。
 - **潮人**：适合侨乡、同乡会、宗亲会、海外社群、文化社团语境。
 - **潮州人 / Teochew**：可用于历史潮州府、潮州话、海外 Teochew 社群等语境，但不要把“潮州”机械等同于整个潮汕。
-- **chaoshan-ren**：只作为技术名使用，包括 skill 名、包名、安装目录和命令。
+- **teochew-people-skill**：只作为技术名使用，包括 skill 名、包名、安装目录和命令。
 
 ## 一个具体案例
 
 比如分析 2026 年 4 月 30 日上映的潮汕方言电影《给阿嬷的情书》时，普通模型很容易只写成“方言亲情片”或“潮汕人很重家庭”。使用这个 skill，agent 会先抓住更有潮汕文化辨识度的线索：
+
+![《给阿嬷的情书》动态分析演示](assets/case-demo.svg)
 
 - 片名里的“阿嬷”不是普通亲昵称呼，而是潮汕家庭代际情感的入口。
 - 影片以侨批家书为核心线索，可以连接潮汕侨乡、下南洋、跨海汇款、家书往返和家国记忆。
@@ -31,7 +33,7 @@
 示例提问：
 
 ```text
-使用 $chaoshan-ren，分析电影《给阿嬷的情书》为什么适合作为潮汕文化传播案例，重点写侨批、阿嬷、潮汕话和大潮汕文化圈，不要写成泛泛的亲情片影评。
+使用 $teochew-people-skill，分析电影《给阿嬷的情书》为什么适合作为 Teochew People (潮汕人) 文化传播案例，重点写侨批、阿嬷、潮汕话和大潮汕文化圈，不要写成泛泛的亲情片影评。
 ```
 
 示例输出方向：
@@ -71,7 +73,7 @@
 
 ### Codex
 
-npm 包发布后可以这样安装：
+通过 npm 安装：
 
 ```bash
 npx teochew-people-skill --codex
@@ -92,18 +94,18 @@ npm run install:codex
 默认安装到：
 
 ```text
-$CODEX_HOME/skills/chaoshan-ren
+$CODEX_HOME/skills/teochew-people-skill
 ```
 
 如果没有设置 `CODEX_HOME`，则安装到：
 
 ```text
-~/.codex/skills/chaoshan-ren
+~/.codex/skills/teochew-people-skill
 ```
 
 ### Claude Code
 
-npm 包发布后可以这样安装：
+通过 npm 安装：
 
 ```bash
 npx teochew-people-skill --claude
@@ -124,7 +126,7 @@ npm run install:claude
 默认安装到：
 
 ```text
-~/.claude/skills/chaoshan-ren
+~/.claude/skills/teochew-people-skill
 ```
 
 ### 自定义目录
@@ -144,21 +146,21 @@ npx teochew-people-skill --codex --force
 Codex 中可以这样说：
 
 ```text
-使用 $chaoshan-ren，帮我写一段 Teochew People (潮汕人) 文化展览前言，重点不要只写潮州。
+使用 $teochew-people-skill，帮我写一段 Teochew People (潮汕人) 文化展览前言，重点不要只写潮州。
 ```
 
 ```text
-使用 $chaoshan-ren，检查这段潮汕文旅文案有没有刻板印象，并给我一版改写。
+使用 $teochew-people-skill，检查这段潮汕文旅文案有没有刻板印象，并给我一版改写。
 ```
 
 ```text
-使用 $chaoshan-ren，给孩子出花园写一段长辈可以念出来的祝福。
+使用 $teochew-people-skill，给孩子出花园写一段长辈可以念出来的祝福。
 ```
 
 Claude Code 中可以这样调用：
 
 ```text
-/chaoshan-ren 写一个 60 秒短视频脚本，解释英歌为什么有感染力，但不要猎奇化。
+/teochew-people-skill 写一个 60 秒短视频脚本，解释英歌为什么有感染力，但不要猎奇化。
 ```
 
 更多 before/after 示例见 [examples/before-after.md](examples/before-after.md)。
@@ -195,7 +197,7 @@ Teochew People (潮汕人) refers here to the wider Chaoshan cultural world: Sha
 │   └── before-after.md
 ├── skills/
 │   ├── README.md
-│   └── chaoshan-ren/
+│   └── teochew-people-skill/
 │       ├── SKILL.md
 │       ├── agents/
 │       │   └── openai.yaml

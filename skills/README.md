@@ -4,7 +4,7 @@
 
 ## 当前包含
 
-- `chaoshan-ren`：Teochew People (潮汕人) 写作与审校 skill，用于粤东潮汕文化圈、海外潮人社群、潮汕方言文化、风俗礼仪、饮食、戏曲、英歌、侨批和当代文化案例。
+- `teochew-people-skill`：Teochew People (潮汕人) 写作与审校 skill，用于粤东潮汕文化圈、海外潮人社群、潮汕方言文化、风俗礼仪、饮食、戏曲、英歌、侨批和当代文化案例。
 
 ## 组织约定
 
@@ -17,7 +17,7 @@
 
 ## 命名约定
 
-- 机器名使用 `chaoshan-ren`，保持 npm、Codex、Claude Code 路径稳定。
+- 机器名使用 `teochew-people-skill`，保持 npm、Codex、Claude Code 路径稳定。
 - 对外英文名使用 `Teochew People (潮汕人)`。
-- 中文语境可以直接写“潮汕人 skill”或“潮汕文化写作 skill”。
+- 中文语境可以直接写“Teochew People (潮汕人) skill”或“潮汕文化写作 skill”。
 - 不把 `Teochew` 简化成今天的潮州市；涉及文化范围时仍按粤东潮汕文化圈解释。
