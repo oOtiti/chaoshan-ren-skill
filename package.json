@@ -1,22 +1,23 @@
 {
-  "name": "chaoshan-ren-skill",
+  "name": "teochew-people-skill",
   "version": "0.1.0",
   "description": "Teochew People (潮汕人) writing and review skill for AI agents.",
   "license": "MIT",
   "author": "oOtiti",
-  "homepage": "https://github.com/oOtiti/chaoshan-ren-skill#readme",
+  "homepage": "https://github.com/oOtiti/teochew-people-skill#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oOtiti/chaoshan-ren-skill.git"
+    "url": "git+https://github.com/oOtiti/teochew-people-skill.git"
   },
   "bugs": {
-    "url": "https://github.com/oOtiti/chaoshan-ren-skill/issues"
+    "url": "https://github.com/oOtiti/teochew-people-skill/issues"
   },
   "publishConfig": {
     "access": "public"
   },
   "type": "module",
   "bin": {
+    "teochew-people-skill": "scripts/install-skill.mjs",
     "chaoshan-ren-skill": "scripts/install-skill.mjs"
   },
   "files": [

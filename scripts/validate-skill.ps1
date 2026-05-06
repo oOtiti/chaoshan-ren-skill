@@ -94,12 +94,16 @@ if ($referenceText -match '\[TODO|TODO:') {
 }
 
 $package = Get-Content -LiteralPath $packageFile -Raw | ConvertFrom-Json
-if ($package.name -ne "chaoshan-ren-skill") {
-    Fail "package.json 的 name 应为 chaoshan-ren-skill"
+if ($package.name -ne "teochew-people-skill") {
+    Fail "package.json 的 name 应为 teochew-people-skill"
+}
+
+if (-not $package.bin.'teochew-people-skill') {
+    Fail "package.json 应提供 teochew-people-skill 命令"
 }
 
 if (-not $package.bin.'chaoshan-ren-skill') {
-    Fail "package.json 应提供 chaoshan-ren-skill 命令"
+    Fail "package.json 应保留 chaoshan-ren-skill 兼容命令"
 }
 
 $installer = Get-Content -LiteralPath $installScript -Raw
@@ -110,7 +114,7 @@ foreach ($term in @("--codex", "--claude", "--dest", "--force", "skills", "chaos
 }
 
 $readme = Get-Content -LiteralPath $readmeFile -Raw
-foreach ($term in @("Teochew People (潮汕人) Skill", "名字怎么理解", "一个具体案例", "给阿嬷的情书", "为什么值得用", "快速安装", "使用示例", "效果预览", "npx chaoshan-ren-skill --codex", "npx chaoshan-ren-skill --claude")) {
+foreach ($term in @("Teochew People (潮汕人) Skill", "名字怎么理解", "一个具体案例", "给阿嬷的情书", "为什么值得用", "快速安装", "使用示例", "效果预览", "npx teochew-people-skill --codex", "npx teochew-people-skill --claude")) {
     if ($readme -notmatch [regex]::Escape($term)) {
         Fail "README 应包含 '$term'"
     }

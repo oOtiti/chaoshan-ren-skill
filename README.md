@@ -74,13 +74,13 @@
 npm 包发布后可以这样安装：
 
 ```bash
-npx chaoshan-ren-skill --codex
+npx teochew-people-skill --codex
 ```
 
 现在也可以直接从 GitHub 安装：
 
 ```bash
-npx github:oOtiti/chaoshan-ren-skill --codex
+npx github:oOtiti/teochew-people-skill --codex
 ```
 
 从本仓库本地安装：
@@ -106,13 +106,13 @@ $CODEX_HOME/skills/chaoshan-ren
 npm 包发布后可以这样安装：
 
 ```bash
-npx chaoshan-ren-skill --claude
+npx teochew-people-skill --claude
 ```
 
 现在也可以直接从 GitHub 安装：
 
 ```bash
-npx github:oOtiti/chaoshan-ren-skill --claude
+npx github:oOtiti/teochew-people-skill --claude
 ```
 
 从本仓库本地安装：
@@ -130,13 +130,13 @@ npm run install:claude
 ### 自定义目录
 
 ```bash
-npx chaoshan-ren-skill --dest /path/to/skills
+npx teochew-people-skill --dest /path/to/skills
 ```
 
 目标目录已存在时，安装器会停止并提示；确认覆盖时加：
 
 ```bash
-npx chaoshan-ren-skill --codex --force
+npx teochew-people-skill --codex --force
 ```
 
 ## 使用示例

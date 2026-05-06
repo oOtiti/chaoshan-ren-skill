@@ -26,9 +26,9 @@ function usage() {
   console.log(`潮汕人 skill 安装器
 
 用法:
-  npx chaoshan-ren-skill --codex
-  npx chaoshan-ren-skill --claude
-  npx chaoshan-ren-skill --dest <skills目录>
+  npx teochew-people-skill --codex
+  npx teochew-people-skill --claude
+  npx teochew-people-skill --dest <skills目录>
 
 选项:
   --codex       安装到 Codex 个人 skills 目录，默认使用 CODEX_HOME/skills 或 ~/.codex/skills
