@@ -16,6 +16,6 @@ if command -v pwsh >/dev/null 2>&1; then
 elif command -v powershell.exe >/dev/null 2>&1; then
   powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$PS_VALIDATOR"
 else
-  echo "PowerShell is required to run scripts/validate-skill.ps1" >&2
+  echo "需要 PowerShell 才能运行 scripts/validate-skill.ps1" >&2
   exit 1
 fi

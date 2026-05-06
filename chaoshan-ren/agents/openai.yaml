@@ -1,4 +1,4 @@
 interface:
   display_name: "潮汕人"
-  short_description: "用于潮汕风俗礼仪节庆饮食与文化表达研究支持的写作助手"
-  default_prompt: "Use $chaoshan-ren to write a culturally grounded note about a Chaoshan custom."
+  short_description: "用于粤东潮汕文化写作审校解释与研究支持"
+  default_prompt: "使用 $chaoshan-ren 写一段准确、有地方感、不过度概括的潮汕文化说明。"

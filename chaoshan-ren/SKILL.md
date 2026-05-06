@@ -1,57 +1,72 @@
 ---
 name: chaoshan-ren
-description: Use when Codex needs to write, review, explain, localize, or research content about Chaoshan / Teochew people and culture, including 潮汕人, 潮州人, Teochew identity, customs, etiquette, festivals, family rituals, foodways, gongfu tea, Chaozhou opera, Yingge dance, temples, clan halls, diaspora contexts, and culturally sensitive public-facing copy.
+description: 用于围绕粤东潮汕文化圈进行中文写作、审校、解释、研究和本地化，包括潮汕人、潮汕文化、汕头、潮州、揭阳、潮汕侨乡、潮汕话、工夫茶、潮剧、英歌、粿品、潮汕菜、出花园、行彩桥、营老爷、祠堂、善堂、侨批、民俗礼仪、节庆场景、家族记忆和公开传播文案。适用于需要避免把潮州单点误写成全部潮汕、避免刻板印象、并尊重地方差异的任务。
 ---
 
 # 潮汕人
 
-## Overview
+## 是什么
 
-Use this skill to produce culturally grounded, non-stereotyped work about Chaoshan / Teochew people and culture. Treat 潮汕 as a living regional and diaspora culture, not a fixed checklist.
+这个 skill 帮助 Codex 写出更像“懂潮汕”的中文内容：既能讲清楚粤东潮汕文化圈的风俗、礼仪、饮食、语言、戏曲、民间艺术和侨乡记忆，也能避免把一个城市、一个村、一个家庭的做法说成全体潮汕人的做法。
 
-## Core Workflow
+这里的“潮汕”优先按粤东大潮汕文化圈理解，重点覆盖汕头、潮州、揭阳以及海内外潮人社群。潮州是重要源流和文化重镇，但不是全部潮汕；写作时要同时给汕头、揭阳、普宁、潮阳、潮南、澄海、惠来、揭西等地域差异留出位置。
 
-1. Identify the audience and task: insider family note, public cultural explainer, travel copy, product naming, ceremony script, classroom summary, or fictional scene.
-2. Load `references/chaoshan-customs.md` when the task needs concrete customs, cultural examples, or source-grounded facts.
-3. Distinguish well-attested public culture from family-specific practice. Ask for family, village, city, or diaspora context when the output would prescribe ritual steps.
-4. Use concrete cultural anchors such as 工夫茶, 潮剧, 英歌, 出花园, 七样羹, 潮州菜, 祠堂, 善堂, or 营老爷 only when they serve the user's purpose.
-5. State uncertainty plainly for local variants. Prefer "many Chaoshan families..." or "in some villages..." over universal claims.
+## 什么时候使用
 
-## Voice And Framing
+使用这个 skill，当用户要你：
 
-- Use "Chaoshan / Teochew" for English-facing audiences; clarify that Teochew often refers to Chaozhou speech and overseas communities.
-- In Chinese, use "潮汕" for the wider regional culture and "潮州" only when the source or context is specifically Chaozhou.
-- Avoid flattening Chaoshan identity into stereotypes about business, patriarchy, religiosity, or clan ties.
-- Explain ritual meanings through family continuity, gratitude, auspicious symbolism, local memory, and community bonds.
-- When writing ceremonial copy, keep the tone warm, restrained, and respectful; avoid mystical certainty or invented blessings.
+- 写潮汕人、潮汕文化、粤东民俗、潮汕侨乡、潮汕家庭礼仪或地方文化介绍。
+- 改写旅游文案、展览文案、短视频脚本、公众号文章、品牌故事、菜品介绍、节庆祝福、家族纪念文字。
+- 判断一段内容有没有把“潮州”误写成“大潮汕”，有没有刻板化潮汕人，或者有没有把地方习俗写得太武断。
+- 解释工夫茶、潮剧、英歌、潮汕菜、粿、出花园、七样羹、行彩桥、营老爷、祠堂、善堂、侨批等文化元素。
+- 需要用温和、准确、有地方感的中文表达潮汕文化，而不是写成百科条目或营销套话。
 
-## Accuracy Guardrails
+## 什么时候不要使用
 
-- Do not present one household's practice as the Chaoshan norm.
-- Do not invent dialect spellings. If pronunciation matters, say that romanization systems vary and ask for the preferred form.
-- Do not give operational religious instructions as if authoritative. Suggest checking elders, local ritual specialists, temple committees, or family practice.
-- For public or educational materials, include sources or source notes when making factual claims about non-heritage status, dates, or official recognition.
+不要使用这个 skill，当任务主要是：
 
-## Useful Output Patterns
+- 只讨论广东其他地区文化，和潮汕或粤东潮汕文化圈没有关系。
+- 需要严格的学术论文、族谱考证、法律文件、宗教仪轨说明或医疗/风水/择日建议；这些需要专门资料或当地权威确认。
+- 要求给出某个村、某个姓氏、某个家庭的完整祭拜流程，但用户没有提供具体地方和家族做法。
+- 要求编造“古法”“祖训”“禁忌”“潮汕话读音”来增强真实感。
+- 要求用刻板印象包装潮汕人，例如把潮汕人一概写成会经商、重宗族、重男轻女、迷信或排外。
 
-For explainers:
+## 使用流程
+
+1. 先判断任务是解释、创作、审校、改写，还是资料梳理。
+2. 需要具体事实、风俗例子或资料来源时，读取 `references/粤东潮汕文化.md`。
+3. 先确定范围：大潮汕、汕头、潮州、揭阳、普宁、潮阳、海外潮人社群，还是用户指定的家族/村落。
+4. 写作时把“生活场景 + 文化含义 + 地方差异 + 当代表达”连起来，不要只堆名词。
+5. 遇到礼俗流程、宗教祭祀、方言读音、家族规矩时，明确提示“各地各家有差异”，不要替当地长辈或仪式主持人下定论。
+
+## 写作口径
+
+- 写“潮汕”时，默认是粤东潮汕文化圈；写“潮州”时，只指潮州本地、潮州历史文化或资料来源明确称为潮州的对象。
+- 写“潮汕人”时，保留城市、乡镇、村落、家族、海外社群之间的差异。
+- 写传统礼俗时，多用“常见于”“不少地方会”“有些家庭会”，少用“潮汕人都”“必须”“一定”。
+- 写文化气质时，优先从工夫茶的待客、粿品的节令、英歌的群体表演、潮剧的乡音、侨批的家国往返、善堂的互助来展开。
+- 写得有温度，但不要神秘化、猎奇化、鸡汤化。
+
+## 常用输出形态
+
+文化解释：
 
 ```text
-Lead with the lived scene, explain the custom, add regional variation, then close with what the practice preserves today.
+先写一个具体生活场景，再解释这个习俗是什么、为什么重要、哪些地方会有不同，最后落到今天的人情和记忆。
 ```
 
-For family/ceremony copy:
+礼仪/祝福文案：
 
 ```text
-Begin with kinship and gratitude, name the custom lightly, avoid over-explaining, and leave space for family-specific wording.
+先写亲情、敬意和团圆，再轻轻点出风俗，不要把仪式步骤写死，给家庭自己的说法留空间。
 ```
 
-For review tasks:
+审校建议：
 
 ```text
-Flag stereotypes, overgeneralization, confused Chaozhou/Chaoshan scope, unsupported historical claims, and tone that exoticizes local practice.
+指出范围错误、刻板印象、过度概括、没有来源的历史判断、把潮州等同潮汕、把民俗写成猎奇内容等问题。
 ```
 
-## Reference
+## 参考资料
 
-Read `references/chaoshan-customs.md` for compact notes on customs, festivals, foodways, performance arts, language, diaspora framing, and source pointers.
+读取 `references/粤东潮汕文化.md` 获取更完整的文化范围、风俗条目、写作注意事项和资料来源。
