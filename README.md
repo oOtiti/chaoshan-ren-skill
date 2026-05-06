@@ -141,6 +141,36 @@ npx teochew-people-skill --dest /path/to/skills
 npx teochew-people-skill --codex --force
 ```
 
+## 项目自动化
+
+本仓库已经准备好 GitHub Actions：
+
+- `CI`：每次推送到 `main`、打开 Pull Request 或手动运行时，会在 Node.js 22 和 24 上执行 skill 校验与 npm 打包预检查。
+- `Publish npm package`：发布 GitHub Release 或手动运行时，会先校验再发布到 npmjs.com。它按 npm Trusted Publishing 方式设计，不需要把长期 npm token 放进 GitHub Secrets。
+
+更细的说明见 [GitHub Workflows 说明](docs/github-workflows.md)。
+
+## 维护者发布
+
+第一次发布 npm 包时，维护者需要先在本机登录 npm，并确认账号已满足 npm 的发布要求：
+
+```bash
+npm login
+npm whoami
+npm run validate
+npm run pack:check
+npm publish --access public
+```
+
+之后每次更新都要先升级版本号，例如：
+
+```bash
+npm version patch
+git push origin main --follow-tags
+```
+
+然后在 GitHub 创建 Release，触发自动发布。完整步骤见 [npm 发布与更新指南](docs/publishing.md)。
+
 ## 使用示例
 
 Codex 中可以这样说：
