@@ -11,6 +11,7 @@
     "skills/chaoshan-ren",
     "scripts/install-skill.mjs",
     "examples",
+    "assets/social-preview.png",
     "README.md",
     "CONTRIBUTING.md",
     "LICENSE"
